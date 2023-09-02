@@ -1,0 +1,21 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "start": "node getGrades.js & nodemon -w ./grades.json --exec \"BOT_TOKEN=$BOT_TOKEN micro-bot -p $PORT\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jeyan karthikeyan",
+  "license": "ISC",
+  "dependencies": {
+    "google-auth-library": "^3.1.2",
+    "googleapis": "^39.2.0",
+    "micro-bot": "^2.5.3",
+    "nodemon": "^2.0.7"
+  }
+}
